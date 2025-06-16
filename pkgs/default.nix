@@ -8,6 +8,9 @@
   mcp-server-brave-search = pkgs.callPackage (import ./reference/generic-ts.nix {
     service = "brave-search";
   }) { };
+  claude-task-master = pkgs.callPackage (import ./official/claude-task-master { 
+    service = "taskmaster";
+  }) { };
   mcp-server-everart = pkgs.callPackage (import ./reference/generic-ts.nix {
     service = "everart";
   }) { };
