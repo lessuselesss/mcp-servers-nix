@@ -1,3 +1,8 @@
+{ mkServerModule, ... }:
+{
+  imports = [ (mkServerModule { name = "claude-task-master"; }) ];
+}
+
 { config, pkgs, lib, mkServerModule, ... }:
 let
   cfg = config.programs.claude-task-master;
